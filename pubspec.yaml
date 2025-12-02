@@ -1,0 +1,28 @@
+name: suraksha_setu
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+dependencies:
+  geolocator: ^10.0.0
+  geocoding: ^3.0.0
+  http: ^1.2.0
+  flutter:
+    sdk: flutter
+  video_player: ^2.7.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  assets:
+    - assets/logo.png
+    - assets/LOGO (1).png
+    - assets/videos/earthquake.mp4
+    - assets/videos/bomb_public.mp4
+  uses-material-design: true
