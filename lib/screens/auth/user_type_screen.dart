@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
-import 'student_signup.dart';
-import 'faculty_signup.dart';
-import 'admin_signup.dart';
+import 'package:suraksha_setu/screens/auth/login_screen.dart';
+import 'package:suraksha_setu/screens/auth/student_signup.dart';
+import 'package:suraksha_setu/screens/auth/faculty_signup.dart';
+import 'package:suraksha_setu/screens/auth/admin_signup.dart';
 
 class UserTypeScreen extends StatelessWidget {
   const UserTypeScreen({Key? key}) : super(key: key);

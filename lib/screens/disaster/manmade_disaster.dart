@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'video_player_screen.dart';
+import 'package:suraksha_setu/screens/home/video_player_screen.dart';
 
 class ManMadeDisasterScreen extends StatelessWidget {
   const ManMadeDisasterScreen({Key? key}) : super(key: key);

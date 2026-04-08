@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'video_player_screen.dart';
+import 'package:suraksha_setu/screens/home/video_player_screen.dart';
 
 class NaturalDisasterScreen extends StatelessWidget {
   const NaturalDisasterScreen({Key? key}) : super(key: key);
@@ -55,5 +55,3 @@ class NaturalDisasterScreen extends StatelessWidget {
     );
   }
 }
-
-
