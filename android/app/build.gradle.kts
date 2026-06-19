@@ -18,6 +18,7 @@ android {
 
 
     defaultConfig {
+        manifestPlaceholders["MAPS_API_KEY"] = System.getenv("MAPS_API_KEY") ?: ""
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.rakshak.suraksha_setu"
         // You can update the following values to match your application needs.

@@ -4,13 +4,20 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'bloc/auth/auth_bloc.dart';
 import 'repository/auth_repository.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await dotenv.load(fileName: ".env");
+
   runApp(
     MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (_) => AuthBloc(AuthRepository()),
+          create: (_) => AuthBloc(
+            AuthRepository(),
+          ),
         ),
       ],
       child: const MyApp(),
@@ -26,8 +33,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SurakshaSetu',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const SplashScreen(), // start with splash
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const SplashScreen(),
     );
   }
 }

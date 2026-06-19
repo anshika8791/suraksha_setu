@@ -5,7 +5,7 @@ import 'package:suraksha_setu/services/disaster_api_service.dart';
 import 'package:suraksha_setu/screens/auth/login_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'emer.dart';
-import 'locate.dart';
+import 'safe_locations_screen.dart';
 import 'package:suraksha_setu/services/location_service.dart';
 import 'profile_screen.dart';
 
